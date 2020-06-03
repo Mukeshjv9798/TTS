@@ -428,10 +428,10 @@ def evaluate(model, criterion, ap, global_step, epoch):
     if args.rank == 0 and epoch > c.test_delay_epochs:
         if c.test_sentences_file is None:
             test_sentences = [
-                "It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent.",
-                "Be a voice, not an echo.",
-                "I'm sorry Dave. I'm afraid I can't do that.",
-                "This cake is great. It's so delicious and moist."
+                "ପ୍ରଶ୍ନ: ବିଜୟ ଅଷ୍ଟ ରତ୍ନ କେଉଁମାନେ ହେଉଛନ୍ତି ?",
+                "ଅଷ୍ଟରତ୍ନ ଆତ୍ମାମାନେ ଦୂରଦୃଷ୍ଟି ସମ୍ପନ୍ନ ହୋଇଥିବା କାରଣରୁ ନିରନ୍ତର ଭାଇ ଭାଇର ସ୍ମୃତିରେ ରହିଥା’ନ୍ତି ।",
+                "ଯୁବାମାନଙ୍କୁ ବହୁତ ମେହନତ କରିବାକୁ ପଡୁଛି ଏବଂ ବୃଦ୍ଧମାନଙ୍କୁ କମ୍ ।",
+                "ଏବେ ତୁମେ କଣ୍ଟାରୁ ଫୁଲ ହେବାର ପୁରୁଷାର୍ଥ କରୁଛ ।"
             ]
         else:
             with open(c.test_sentences_file, "r") as f:
