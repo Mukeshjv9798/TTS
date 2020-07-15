@@ -118,12 +118,12 @@
     "max_seq_len": 153,     // DATASET-RELATED: maximum text length
 
     // PATHS
-    "output_path": "/content/drive/My Drive/ttsoutput1/",
+    "output_path": "/content/drive/My Drive/poutput/",
 
     // PHONEMES
-    "phoneme_cache_path": "/media/erogol/data_ssd2/mozilla_us_phonemes_3",  // phoneme computation is slow, therefore, it caches results in the given folder.
-    "use_phonemes": false,           // use phonemes instead of raw characters. It is suggested for better pronounciation.
-    "phoneme_language": "en-us",     // depending on your target language, pick one from  https://github.com/bootphon/phonemizer#languages
+    "phoneme_cache_path": "/content/drive/My Drive/phonemes/",  // phoneme computation is slow, therefore, it caches results in the given folder.
+    "use_phonemes": true,           // use phonemes instead of raw characters. It is suggested for better pronounciation.
+    "phoneme_language": "or",     // depending on your target language, pick one from  https://github.com/bootphon/phonemizer#languages
 
     // MULTI-SPEAKER and GST
     "use_speaker_embedding": false,     // use speaker embedding to enable multi-speaker learning.
@@ -135,9 +135,9 @@
         [
             {
                 "name": "ljspeech",
-                "path": "/content/drive/My Drive/",
-                "meta_file_train": "metadata_train.csv",
-                "meta_file_val": "metadata_val.csv"
+                "path": "/content/",
+                "meta_file_train": "metadata.csv",
+                "meta_file_val": null
             }
         ]
 
